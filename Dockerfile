@@ -28,6 +28,7 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction \
 # Config Nginx + Supervisor
 COPY docker/nginx.conf /etc/nginx/http.d/default.conf
 COPY docker/supervisord.conf /etc/supervisord.conf
+COPY docker/ca.pem /var/www/docker/ca.pem
 
 EXPOSE 8080
 
