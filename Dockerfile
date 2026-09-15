@@ -5,6 +5,7 @@ RUN apk add --no-cache \
     nginx supervisor \
     libpng-dev libjpeg-turbo-dev freetype-dev \
     libzip-dev zip unzip git curl \
+    oniguruma-dev \
     mysql-client
 
 # Extensions PHP
