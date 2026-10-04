@@ -717,126 +717,134 @@
 (function(){
   const THEMES = [
     {
-      key:"attentes", label:"Attentes", tagClass:"cat-leger", color:"var(--gold-dim)",
+      key:"origine", label:"Notre origine", tagClass:"cat-leger", color:"var(--gold-dim)",
       questions:[
-        "Concrètement, qu'attends-tu de moi quand tu rentres épuisé(e) : écoute, silence, câlin, ou espace — et dans quel ordre ?",
-        "Quelle fréquence minimale de messages ou d'appels te fait sentir que je pense à toi sans que ce soit étouffant ?",
-        "Qu'est-ce que tu attends de moi quand tu as une mauvaise nouvelle : que je trouve des solutions ou que je reste juste là ?",
-        "Quelle place veux-tu que j'occupe dans tes amitiés : présent(e) aux sorties, en retrait, ou au cas par cas — explique avec un exemple.",
-        "Qu'attends-tu de moi sur la jalousie : transparence totale, confiance aveugle, ou règles précises — lesquelles ?",
-        "Quelle est la promesse non dite que tu attends de moi dans ce couple (fidélité émotionnelle, priorités, temps…) ?",
-        "Qu'attends-tu de moi quand on n'est pas d'accord : débat immédiat, pause, ou écrit le lendemain ?",
-        "Est-ce que tu penses que tu m'aimes ? Ou que ressens-tu pour moi ?",  
-        "Quel niveau d'initiative veux-tu de ma part pour organiser dates, sexe, projets — 50/50 ou que je prenne les rênes parfois ?",
-        "Qu'attends-tu que je fasse quand tu dis « ça va » alors que ce n'est clairement pas le cas ?",
-        "Quelle reconnaissance concrète (mots, gestes, cadeaux) te fait sentir que ton effort dans le couple est vu ?",
-        "Qu'attends-tu de moi vis-à-vis de ta famille : soutien inconditionnel, neutralité, ou limites claires avec eux ?",
-        "Si tu devais formuler une « fiche de poste » du partenaire idéal pour toi aujourd'hui, quelles seraient les 3 lignes non négociables ?",
-        "Qu'attends-tu de moi quand tu réussis quelque chose : célébration bruyante, fierté discrète, ou partage sur les réseaux — ou non ?",
-        "Quelle transparence attends-tu sur l'argent que je dépense seul(e) (seuil au-delà duquel tu veux être prévenu(e)) ?"
+        "Pourquoi as-tu accepté de mener une vie de couple avec moi — au fond, qu'est-ce qui t'a décidé(e) ?",
+        "Quel a été le moment exact où tu as su que tu voulais vraiment que ça devienne quelque chose entre nous ?",
+        "Qu'est-ce qui t'a séduit(e) chez moi avant même qu'on se parle vraiment — une chose que tu n'as jamais dite ?",
+        "Qu'est-ce que tu t'es dit la première nuit passée avec moi, dans ta tête la plus honnête ?",
+        "Si tu devais expliquer pourquoi tu m'as choisi(e), toi parmi tous, quelle serait ta vraie réponse — pas la jolie version ?",
+        "Est-ce qu'il y a eu un moment où tu as failli ne pas choisir cette relation — qu'est-ce qui t'a retenu(e) ?",
+        "Qu'est-ce que tu avais peur de perdre en disant oui à nous — et est-ce que tu l'as regretté ?",
+        "À quel moment as-tu arrêté de te demander si c'était une bonne idée de tomber amoureux(se) de moi ?",
+        "Qu'est-ce que notre rencontre a changé dans ta façon de voir l'amour — une croyance que tu as dû abandonner ?",
+        "Quelle version de toi est apparue grâce à moi — une part que tu n'aurais pas découverte sans nous ?",
+        "Qu'est-ce que tu as fait ou dit au tout début pour me plaire, quelque chose que tu n'aurais pas fait avec quelqu'un d'autre ?",
+        "Quel défaut chez moi as-tu remarqué très tôt et décidé d'aimer quand même — consciemment ou non ?",
+        "Quelle image de moi as-tu gardée du tout début qui ne correspond plus tout à fait à qui je suis maintenant ?",
+        "Qu'est-ce que tu as failli ne jamais oser me dire et qui aurait peut-être tout changé si tu ne l'avais pas dit ?"
       ]
     },
     {
-      key:"engagement", label:"Engagement", tagClass:"cat-profond", color:"var(--rose-dim)",
+      key:"profond", label:"Profondeurs", tagClass:"cat-profond", color:"var(--rose-dim)",
       questions:[
-        "Qu'est-ce qui, chez moi ou dans notre dynamique, te ferait sérieusement remettre en question l'avenir du couple ?",
-        "Quelle trahison (même « petite ») serait irréparable pour toi : mensonge, flirt, secret financier, autre ?",
-        "Es-tu exclusivement avec moi aujourd'hui — émotionnellement et physiquement — et y a-t-il une zone grise dont je devrais savoir ?",
-        "Dans combien de temps veux-tu qu'on ait clarifié notre projet commun (mariage, PACS, enfants, colocation) — et quelle étape en premier ?",
-        "Quelle part de ta liberté personnelle refuses-tu de sacrifier, même pour moi ?",
-        "Si on devait signer un contrat de couple honnête ce soir, quelle clause protégerais-tu en premier ?",
-        "Qu'est-ce que « rester ensemble pour les bonnes raisons » signifie pour toi — pas par peur, pas par habitude ?",
-        "As-tu encore des sentiments ou des liens avec un·e ex que je devrais connaître pour construire en confiance ?",
-        "Quel engagement concret veux-tu que je prenne cette année (thérapie de couple, budget commun, déménagement…) ?",
+        "Quelle est la chose que tu ressens pour moi et que tu n'as jamais réussi à mettre en mots — essaie maintenant.",
+        "Qu'est-ce que tu penses vraiment de nous deux, quand tu es seul(e) avec toi-même, sans te censurer ?",
+        "Quel besoin en toi est-ce que je comble sans que tu me l'aies jamais dit clairement ?",
+        "À quel moment précis as-tu senti que tu m'aimais d'une façon qui te faisait un peu peur ?",
+        "Qu'est-ce que ma présence change dans ta vie quotidienne — quelque chose de concret que tu remarques quand je ne suis pas là ?",
+        "Quelle part de toi caches-tu encore pour rester « facile à aimer » — et qu'est-ce que ça te coûte ?",
+        "Si tu pleurais devant moi sans filtre, sans honte, qu'est-ce qui sortirait en premier ?",
+        "Qu'est-ce que je fais ou dis qui te touche au plus profond, et que tu n'as jamais commenté parce que tu ne sais pas comment ?",
+        "Y a-t-il quelque chose que tu m'as pardonné sans avoir vraiment digéré — qu'est-ce qu'il te faudrait encore pour tourner la page ?",
+        "Qu'est-ce que tu ne m'as jamais dit parce que tu avais peur que ça change quelque chose entre nous ?",
+        "Quand tu imagines le pire pour nous, qu'est-ce que tu vois — et est-ce que tu y penses souvent ?",
+        "Quelle version de toi est-ce que tu réserves pour moi seul(e) — une part que les autres ne voient jamais ?",
+        "Qu'est-ce que tu ressens quand on est dans le silence tous les deux — est-ce que c'est confortable ou est-ce qu'il y a quelque chose qui flotte ?",
+        "Quel mot ou geste de ma part peut changer ton humeur de toute une journée — dans un sens ou dans l'autre ?",
+        "Qu'est-ce que notre couple t'a appris sur toi que tu n'aurais pas voulu savoir ?"
+      ]
+    },
+    {
+      key:"ombres", label:"Ce qu'on ne dit pas", tagClass:"cat-profond", color:"#A07BE8",
+      questions:[
+        "Quelle pensée sombre sur nous as-tu eue et que tu t'es reproché(e) d'avoir ?",
+        "Est-ce qu'il t'arrive de te demander si tu m'aimes vraiment, ou si c'est autre chose — la peur, l'habitude, le confort ?",
+        "Qu'est-ce que tu fais semblant de ne pas remarquer chez moi pour éviter un conflit ?",
+        "Y a-t-il une partie de moi que tu n'arrives pas à accepter entièrement — que tu tolères mais ne choisis pas vraiment ?",
+        "Quelle vérité sur toi-même as-tu évité de me dire parce que tu ne voulais pas changer à mes yeux ?",
+        "Est-ce qu'il y a des moments où tu te demandes ce que serait ta vie sans moi — qu'est-ce que tu y vois ?",
+        "Qu'est-ce que tu retiens quand tu veux me dire quelque chose de blessant mais de vrai — est-ce que tu as raison de le retenir ?",
+        "Quelle chose chez moi t'énerve en silence depuis longtemps et que tu n'oses pas nommer ?",
+        "As-tu déjà eu envie de quelqu'un d'autre depuis qu'on est ensemble — et qu'est-ce que ça t'a fait ?",
+        "Quelle peur de l'abandon ou du rejet gouverne encore ta façon de te comporter avec moi, même inconsciemment ?",
+        "Qu'est-ce que tu gardes pour toi pour te protéger — une réserve, une sortie de secours — et est-ce que tu en as honte ?",
+        "Quel mensonge par omission m'as-tu fait, que tu n'as jamais réparé ?",
+        "Qu'est-ce qui te retient parfois de te donner entièrement à nous ?"
+      ]
+    },
+    {
+      key:"engagement", label:"Nous, pour de vrai", tagClass:"cat-profond", color:"#7C8AE8",
+      questions:[
+        "Qu'est-ce que ça signifie pour toi d'être vraiment avec quelqu'un — et est-ce que tu penses qu'on l'est ?",
+        "Quelle trahison serait irréparable pour toi — pas la réponse évidente, la vraie limite que tu n'as jamais formulée ?",
+        "Y a-t-il quelque chose que tu attends de moi depuis longtemps et que tu n'as jamais demandé, par peur que je dise non ?",
+        "Qu'est-ce que « choisir l'autre chaque jour » veut dire pour toi — comment tu le vis concrètement ?",
+        "Si tu devais me demander une seule chose pour que tu te sentes vraiment en sécurité dans ce couple, ce serait quoi ?",
         "Peux-tu me dire une chose que tu n'as pas encore totalement « choisie » en restant avec moi ?",
-        "Comment définis-tu la loyauté dans un couple : qu'est-ce qui est OK avec d'autres, et qu'est-ce qui ne l'est jamais ?",
-        "Quelle preuve d'engagement de ma part te manque le plus aujourd'hui ?"
+        "Quelle version de notre relation tu portes dans ta tête — est-ce qu'elle ressemble à ce qu'on vit vraiment ?",
+        "Qu'est-ce qui te fait rester, toi — au-delà de l'amour, au-delà des projets, le truc concret qui t'ancre ici ?",
+        "Es-tu pleinement et exclusivement avec moi aujourd'hui — émotionnellement — et y a-t-il une zone grise dont je devrais savoir ?",
+        "Quelle règle non dite gouverne notre couple et que tu voudrais qu'on mette à plat une bonne fois ?",
+        "Qu'est-ce que tu attends encore de moi que tu n'as jamais osé demander par peur de trop exiger ?",
+        "Comment sais-tu que tu m'aimes encore — quel signal intérieur te le dit ?",
+        "Si dans dix ans on regarde en arrière, qu'est-ce que tu veux qu'on se soit dit aujourd'hui ?",
+        "Quelle conversation on n'a pas encore eu et qu'on devrait avoir bientôt — laquelle, et pourquoi maintenant ?"
       ]
     },
     {
-      key:"profond", label:"Profond", tagClass:"cat-profond", color:"var(--rose-dim)",
+      key:"desir", label:"Corps & désir", tagClass:"cat-intime", color:"#9B6BFA",
       questions:[
-        "Quelle vérité sur toi dans ce couple n'as-tu jamais osé formuler clairement ?",
-        "Qu'est-ce que tu me reproches en silence depuis plus de six mois ?",
-        "Quelle peur d'enfance ou de relation passée influence encore ta façon de réagir avec moi ?",
-        "Quand te sens-tu le moins en sécurité émotionnellement avec moi — décris une situation précise.",
-        "Qu'est-ce que tu as besoin d'entendre de ma bouche pour arrêter de douter de mon amour ?",
-        "Y a-t-il quelque chose que tu m'as pardonné sans avoir vraiment digéré — quoi, et qu'est-ce qu'il te faudrait ?",
-        "Quelle part de toi as-tu l'impression de cacher pour rester « facile à aimer » ?",
-        "Qu'est-ce que tu voudrais que je comprenne sur ta façon de dire « je t'aime » sans toujours le prononcer ?",
-        "Quel est le sujet tabou entre nous que tu évites parce que tu crains ma réaction ?",
-        "Si tu pleurais devant moi sans filtre, qu'est-ce qui sortirait en premier ?",
-        "Qu'est-ce que tu admires chez moi que tu n'arrives pas à te dire à toi-même ?",
-        "Quelle conversation difficile devrions-nous avoir dans les trente prochains jours — laquelle, et pourquoi maintenant ?",
-        "Qu'est-ce que tu as appris sur ta capacité à aimer grâce à nous — y compris ce qui te fait mal ?",
-        "Quelle question sur notre passé n'as-tu jamais osé me poser par peur de la réponse ?"
-      ]
-    },
-    {
-      key:"quotidien", label:"Vie à deux", tagClass:"cat-leger", color:"var(--gold-dim)",
-      questions:[
-        "Comment veux-tu qu'on répartisse les tâches maison si on vit ensemble — liste concrète (cuisine, ménage, admin) ?",
-        "Quel budget mensuel « fun perso » chacun devrait-il garder sans justifier — quel montant te semble juste ?",
-        "Combien de soirées par semaine veux-tu qu'on soit vraiment à deux, sans écrans ni invités ?",
-        "Comment veux-tu qu'on gère une dispute devant des amis ou la famille : front uni ou honnêteté immédiate ?",
-        "Quelle limite poses-tu sur le travail à la maison (mails le soir, week-end) pour protéger le couple ?",
-        "Comment veux-tu qu'on décide d'un gros achat (> X €) — seuil et processus ?",
-        "Quelle place veux-tu pour le sexe dans l'agenda : spontané, planifié, ou les deux — et à quelle fréquence idéale ?",
-        "Comment veux-tu qu'on parle d'enfants (ou absence d'enfants) si le sujet n'est pas encore tranché ?",
-        "Quelle habitude à moi te use le plus au quotidien, et quelle alternative te conviendrait ?",
-        "Quel rituel hebdomadaire veux-tu qu'on installe pour ne pas devenir deux colocataires ?",
-        "Comment veux-tu qu'on gère les fêtes de famille quand nos attentes ne matchent pas ?"
-      ]
-    },
-    {
-      key:"confiance", label:"Confiance", tagClass:"cat-profond", color:"#7C8AE8",
-      questions:[
-        "As-tu déjà fouillé dans mon téléphone ou mes messages — oui/non — et qu'est-ce que ça te dit sur ta confiance ?",
-        "Quel secret (le mien ou le tien) pèse encore sur notre relation ?",
-        "Qu'est-ce qui te ferait dire « je peux tout lui dire » — et qu'est-ce qui manque encore ?",
-        "Y a-t-il une personne dans ton entourage qui influence négativement ton image de nous — qui, et comment ?",
-        "Quelle vérité sur ton passé amoureux devrais-je connaître pour mieux te comprendre aujourd'hui ?",
-        "À quel moment as-tu le plus douté de moi, et qu'est-ce qui t'a fait rester ou te rassurer ?",
-        "Quelle transparence veux-tu sur mes amitiés avec des personnes qui t'attirent ou m'attirent ?",
-        "Qu'est-ce que je pourrais faire demain pour reconstruire une confiance que tu sens fragile ?",
-        "As-tu déjà minimisé quelque chose d'important avec moi pour éviter un conflit — quoi ?",
-        "Quelle promesse que je t'ai faite tiens-tu pour acquise sans vérifier — et est-ce justifié ?"
-      ]
-    },
-    {
-      key:"intime", label:"Intime 🔥", tagClass:"cat-intime", color:"#B49BFA",
-      questions:[
-        "Décris précisément ce que tu veux que je fasse avec ma bouche sur toi la prochaine fois — sans détour.",
-        "Quel est ton fantasme le plus sale avec moi que tu n'as jamais osé demander noir sur blanc ?",
-        "Quelle partie de ton corps veux-tu que je worshippe plus longtemps — et comment (lent, ferme, yeux dans les yeux) ?",
-        "Préfères-tu qu'on domine à tour de rôle, qu'un(e) mène toujours, ou qu'on se provoque — lequel te fait le plus bander / mouiller ?",
-        "Quel mot sale ou surnom au lit veux-tu m'entendre dire — ou que je te fasse dire ?",
-        "Quelle limite « classée tabou » serais-tu prêt(e) à explorer avec moi si on y va doucement — laquelle ?",
-        "Raconte la dernière fois où tu t'es touché(e) en pensant à moi : qu'est-ce que tu te disais, qu'est-ce que tu voulais que je fasse ?",
-        "Veux-tu qu'on filme ou qu'on s'envoie des voix coquines — oui/non, et avec quelles règles de confidentialité ?",
-        "Quel endroit public ou semi-public t'excite à l'idée qu'on s'y touche sans se faire prendre ?",
-        "Qu'est-ce qui te fait le plus jouir : le rythme, la profondeur, les mots, les mains ailleurs — classe-les honnêtement.",
-        "As-tu envie qu'on intègre des jouets, des liens, un miroir, une ceinture — lequel te tente en premier ?",
-        "Quelle scène porno ou érotique aimerais-tu qu'on recrée ensemble, même approximativement ?",
-        "Quand tu me regardes en silence, quelle pensée sexuelle non dite passes-tu le plus souvent ?",
-        "Qu'est-ce que je fais déjà au lit que tu veux en plus grande quantité — sois explicite.",
-        "Veux-tu qu'on fixe une « safe word » et des signaux pour pousser plus loin sans peur — laquelle choisis-tu ?",
-        "Quel est ton kink ou ta pratique secrète que tu crains que je juge — décris-le et dis ce que tu espères de ma réaction."
-      ]
-    },
-    {
-      key:"desir", label:"Désir", tagClass:"cat-intime", color:"#9B6BFA",
-      questions:[
-        "Sur une échelle de 1 à 10, ton désir pour moi cette semaine — et qu'est-ce qui l'a monté ou baissé ?",
-        "À quelle fréquence idéale voudrais-tu qu'on fasse l'amour — nombre honnête, pas la réponse « politique » ?",
-        "Qu'est-ce qui te met instantanément dans l'ambiance chez moi (odeur, voix, tenue, geste) — le plus efficace ?",
-        "Quand as-tu senti pour la dernière fois que je te désirais vraiment, pas par habitude — raconte la scène.",
-        "Qu'est-ce qui te bloque encore pour me montrer ton corps sans retenue (lumière, position, cicatrice, autre) ?",
-        "Préfères-tu l'initiative sexuelle de ma part le matin, le soir, ou au milieu d'une journée ordinaire ?",
+        "Sur une échelle de 1 à 10, ton désir pour moi cette semaine — et qu'est-ce qui l'a monté ou baissé exactement ?",
+        "Qu'est-ce qui te met instantanément dans l'ambiance chez moi (odeur, voix, tenue, geste) — le vrai déclencheur ?",
+        "Quand as-tu senti pour la dernière fois que je te désirais vraiment, pas par habitude — raconte précisément.",
+        "Qu'est-ce qui te bloque encore pour te montrer à moi sans retenue — lumière, position, image de toi, autre ?",
         "Quelle forme de rejet sexuel de ma part te blesse le plus — et comment voudrais-tu que je le formule ?",
-        "Y a-t-il une pratique que tu faisais avant nous que tu regrettes d'avoir mise de côté — laquelle ?",
-        "Quel compliment sur ton corps ou ton énergie sexuelle veux-tu entendre plus souvent de moi ?",
-        "Si on avait une nuit sans limite de temps ni fatigue, par quoi commencerais-tu avec moi — étape par étape ?"
+        "Y a-t-il une pratique ou une énergie que tu avais avant nous et que tu regrettes d'avoir mise de côté ?",
+        "Quel compliment sur ton corps ou ton énergie veux-tu entendre plus souvent de ma bouche ?",
+        "Si on avait une nuit sans limite, sans fatigue, sans jugement, par quoi commencerais-tu — étape par étape ?",
+        "Qu'est-ce que je fais déjà qui te touche profondément au lit — et que tu voudrais que je ne change jamais ?",
+        "Qu'est-ce que tu voudrais me montrer de toi physiquement mais que tu retiens encore — et pourquoi ?",
+        "À quel moment de la journée ton désir pour moi est-il le plus fort — et qu'est-ce qui l'allume à ce moment-là ?",
+        "Est-ce que notre vie sexuelle te comble vraiment, ou il y a quelque chose qui manque que tu n'as jamais osé nommer ?",
+        "Qu'est-ce que tu aimes dans mon corps que tu ne m'as jamais dit clairement — un détail précis ?",
+        "Quelle ambiance, quel contexte, quel décor rendrait notre intimité complètement différente — qu'est-ce dont tu rêves en secret ?"
+      ]
+    },
+    {
+      key:"intime", label:"Intimité sans filtre", tagClass:"cat-intime", color:"#B49BFA",
+      questions:[
+        "Quel est ton fantasme avec moi que tu n'as jamais osé formuler — celui que tu gardes pour toi au fond du lit ?",
+        "Décris ce que tu veux que je te fasse la prochaine fois — précisément, sans détour, comme si tu me le soufflais à l'oreille.",
+        "Quelle partie de ton corps veux-tu que je prenne plus de temps à explorer — et comment (lent, intense, yeux dans les yeux) ?",
+        "Quel mot, surnom ou phrase au lit veux-tu m'entendre dire — celui qui te fait perdre pied ?",
+        "Raconte la dernière fois où tu as pensé à moi dans un moment intime pour toi seul(e) — qu'est-ce qui se passait dans ta tête ?",
+        "Quelle limite que tu t'imposes serais-tu prêt(e) à franchir avec moi si on y allait doucement — laquelle ?",
+        "Qu'est-ce qui te ferait jouir plus fort que d'habitude — une chose précise que tu n'as jamais demandée ?",
+        "Quelle pensée intime non dite te traverse quand tu me regardes en silence, dans ces moments calmes entre nous ?",
+        "Qu'est-ce que tu voudrais qu'on essaie ensemble, quelque chose que tu n'as jamais demandé par peur de ma réaction ?",
+        "Si tu pouvais me dire une seule chose sur ce que tu aimes dans notre intimité — sans pudeur, sans filtre — ce serait quoi ?",
+        "Qu'est-ce que je pourrais faire avant même qu'on soit au lit pour que tu aies déjà envie de moi — ce petit geste ou mot qui change tout ?",
+        "Y a-t-il une scène, une image, une sensation que tu aimes imaginer avec moi mais que tu n'as jamais mise en mots ?",
+        "Qu'est-ce que tu voudrais que je fasse différemment — une chose que tu te retiens de me dire pour ne pas me blesser ?",
+        "Quelle est la chose la plus intime que tu m'aies laissé faire et que tu ne laisserais faire qu'à moi ?"
+      ]
+    },
+    {
+      key:"avenir", label:"Notre avenir", tagClass:"cat-leger", color:"var(--gold-dim)",
+      questions:[
+        "Quelle peur t'empêche parfois de te projeter vraiment avec moi dans l'avenir ?",
+        "Quelle chose veux-tu absolument qu'on ait vécue ensemble avant d'avoir des regrets — une expérience, un endroit, un projet ?",
+        "Comment veux-tu qu'on vieillisse ensemble — qu'est-ce qui est non négociable dans ce tableau ?",
+        "Quelle évolution veux-tu pour toi dans les deux prochaines années, et comment est-ce que je peux te soutenir vraiment ?",
+        "Si tu pouvais changer une seule chose dans notre façon de vivre le quotidien ensemble, ce serait quoi — sans ménagement ?",
+        "Quel rêve personnel tu n'as pas encore partagé avec moi — celui que tu gardes pour toi par peur que je ne comprenne pas ?",
+        "Qu'est-ce que tu veux qu'on construise ensemble que tu n'as jamais su construire seul(e) ?",
+        "Comment imagines-tu notre couple dans les moments de crise — qui tient qui, et comment ?",
+        "Qu'est-ce que tu aurais besoin que je sois différent(e) pour que notre avenir te ressemble vraiment ?",
+        "Si on devait écrire les deux ou trois règles de base de notre couple — celles qui nous ressemblent vraiment — tu mettrais quoi ?",
+        "Y a-t-il quelque chose qu'on a évité de décider ensemble et qu'on ne peut plus continuer à éviter — lequel ?",
+        "Qu'est-ce qui te donnerait le sentiment qu'on forme une vraie équipe, pas juste deux individus qui s'aiment ?"
       ]
     }
   ];
