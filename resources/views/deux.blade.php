@@ -352,7 +352,7 @@
   input[type=text], textarea{ -webkit-tap-highlight-color:transparent; }
 
   @media (max-width:600px){
-    body{ padding:20px 14px; align-items:flex-start; }
+    body{ padding:20px 14px; align-items:center; }
     .app{ max-width:100%; }
     .setup h1{ font-size:clamp(28px,9vw,44px); }
     .question-card{ padding:22px 18px; }
